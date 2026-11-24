@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Hierarchy Tree Navigator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>DOM Hierarchy Tree Navigator</h2>
+        <p>Click any node to view its DOM information.</p>
+
+        <div class="content">
+
+            <!-- Organizational Chart -->
+            <div class="tree">
+                <h3>Organizational Chart</h3>
+
+                <ul id="org-tree">
+
+                    <li>
+                        <span class="node-label">CEO</span>
+
+                        <ul>
+                            <li>
+                                <span class="node-label">IT Department</span>
+
+                                <ul>
+                                    <li>
+                                        <span class="node-label">Web Developer</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="node-label">Programmer</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="node-label">System Analyst</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <span class="node-label">HR Department</span>
+
+                                <ul>
+                                    <li>
+                                        <span class="node-label">Recruiter</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="node-label">HR Manager</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <span class="node-label">Finance Department</span>
+
+                                <ul>
+                                    <li>
+                                        <span class="node-label">Accountant</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="node-label">Cashier</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Information Panel -->
+            <div class="info">
+
+                <h3>Element Information</h3>
+
+                <p>
+                    <b>Selected Node:</b>
+                    <span id="selected">None</span>
+                </p>
+
+                <p>
+                    <b>Parent Tag:</b>
+                    <span id="parent">None</span>
+                </p>
+
+                <p>
+                    <b>Previous Sibling:</b>
+                    <span id="previous">None</span>
+                </p>
+
+                <p>
+                    <b>Next Sibling:</b>
+                    <span id="next">None</span>
+                </p>
+
+                <p>
+                    <b>Immediate Children:</b>
+                    <span id="children">0</span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="java.js"></script>
+
+</body>
+</html>
